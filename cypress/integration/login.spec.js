@@ -2,8 +2,16 @@
 
 context ('confucionadade login', () => {
 
+    beforeEach(() => {
+        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')  
+    });
+    
+    afterEach(() => {
+        cy.screenshot
+    });
+
     it('Deve fazer login com sucesso', () =>{
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    
     cy.get('#username').type('aluno_ebac@teste.com')
     cy.get('#password').type('teste@teste.com')
     cy.get('.woocommerce-form > .button').click()
@@ -12,7 +20,7 @@ context ('confucionadade login', () => {
     })
 
     it('Deve ixibir mensagem de erro ao inserir usuario invalido', () =>{
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    
     cy.get('#username').type('alunoebac@teste.com')
     cy.get('#password').type('teste@teste.com')
     cy.get('.woocommerce-form > .button').click()
@@ -21,7 +29,7 @@ context ('confucionadade login', () => {
     })
 
     it('Deve ixibir mensagem de erro ao inserir senha invalida', () =>{
-        cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+    
         cy.get('#username').type('aluno_ ebac@teste.com')
         cy.get('#password').type('teste@teste')
         cy.get('.woocommerce-form > .button').click()
