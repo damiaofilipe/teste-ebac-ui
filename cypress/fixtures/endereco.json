@@ -1,0 +1,47 @@
+[
+   {
+    "nome": "Damião",
+    "sobrenome": "Filipe",
+    "empresa": "Damião HairStlys",
+    "endereco": "Av. Iraque",
+    "numero": "309",
+    "pais": "Brasil",
+    "cidade": "Uberlândia",
+    "estado": "Minas Gerais",
+    "cep": "38410-282",
+    "telefone": "99107-3746",
+    "email": "damiaofilipe@hotmail.com"
+    
+   },
+   {
+    "nome": "Cristina",
+    "sobrenome": "Pinto",
+    "empresa": "Crisla HairStlys",
+    "endereco": "Rua Peres",
+    "numero": "1205",
+    "pais": "Brasil",
+    "cidade": "Agua Limpa",
+    "estado": "Goias",
+    "cep": "38456-785",
+    "telefone": "98541-3746",
+    "email": "cris412@hotmail.com"
+    
+
+   },
+   {
+    "nome": "Cosme",
+    "sobrenome": "Moreira",
+    "empresa": "Cosmeticos HairStlys",
+    "endereco": "Av. Araujo",
+    "numero": "1425",
+    "pais": "Brasil",
+    "cidade": "Araraquara",
+    "estado": "São Paulo",
+    "cep": "38410-145",
+    "telefone": "99107-3746",
+    "email": "cosmoevanda@hotmail.com"
+    
+   }
+
+
+]

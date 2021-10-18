@@ -15,7 +15,7 @@ context ('confucionadade login', () => {
     
     cy.get('#username').type('aluno_ebac@teste.com')
     cy.get('#password').type('teste@teste.com')
-    cy.get('.woocommerce-form > .button').click()
+    cy.get(':nth-child(7) > font > .button').click()
 
     cy.get('a > .hidden-xs').should('contain', 'Welcome aluno_ebac')
     })
@@ -32,14 +32,13 @@ context ('confucionadade login', () => {
     it('Deve fazer login com sucesso - Arquivo de dados', () => {
     cy.get('#username').type(perfil.usuario)
     cy.get('#password').type(perfil.senha)
-    cy.get('.woocommerce-form > .button').click()
-    cy.get('.woocommerce-form > .button').click()
+    cy.get(':nth-child(7) > font > .button').click()
 
     cy.get('a > .hidden-xs').should('contain', 'Welcome aluno_ebac')
     
     });
 
-    it.only('Deve fazer login com sucesso - usando fixture', () => {
+    it('Deve fazer login com sucesso - usando fixture', () => {
         cy.fixture('perfil').then(dados => {
             cy.get('#username').type(dados.usuario)
             cy.get('#password').type(dados.senha, {log: false})
